@@ -1,0 +1,156 @@
+html, body {
+	overflow-x: hidden;
+}
+@font-face {
+    font-family: 'AlegreyaSansSCRegular';
+    src: url('fonts/AlegreyaSansSCRegular.eot');
+    src: url('fonts/AlegreyaSansSCRegular.eot') format('embedded-opentype'),
+         url('fonts/AlegreyaSansSCRegular.woff2') format('woff2'),
+         url('fonts/AlegreyaSansSCRegular.woff') format('woff'),
+         url('fonts/AlegreyaSansSCRegular.ttf') format('truetype'),
+         url('fonts/AlegreyaSansSCRegular.svg#AlegreyaSansSCRegular') format('svg');
+}
+@font-face {
+    font-family: 'AlegreyaSansSCMedium';
+    src: url('fonts/AlegreyaSansSCMedium.eot');
+    src: url('fonts/AlegreyaSansSCMedium.eot') format('embedded-opentype'),
+         url('fonts/AlegreyaSansSCMedium.woff2') format('woff2'),
+         url('fonts/AlegreyaSansSCMedium.woff') format('woff'),
+         url('fonts/AlegreyaSansSCMedium.ttf') format('truetype'),
+         url('fonts/AlegreyaSansSCMedium.svg#AlegreyaSansSCMedium') format('svg');
+}
+@font-face {
+    font-family: 'AlegreyaSansSCExtraBold';
+    src: url('fonts/AlegreyaSansSCExtraBold.eot');
+    src: url('fonts/AlegreyaSansSCExtraBold.eot') format('embedded-opentype'),
+         url('fonts/AlegreyaSansSCExtraBold.woff2') format('woff2'),
+         url('fonts/AlegreyaSansSCExtraBold.woff') format('woff'),
+         url('fonts/AlegreyaSansSCExtraBold.ttf') format('truetype'),
+         url('fonts/AlegreyaSansSCExtraBold.svg#AlegreyaSansSCExtraBold') format('svg');
+}
+@font-face {
+    font-family: 'AlegreyaSansRegular';
+    src: url('fonts/AlegreyaSansRegular.eot');
+    src: url('fonts/AlegreyaSansRegular.eot') format('embedded-opentype'),
+         url('fonts/AlegreyaSansRegular.woff2') format('woff2'),
+         url('fonts/AlegreyaSansRegular.woff') format('woff'),
+         url('fonts/AlegreyaSansRegular.ttf') format('truetype'),
+         url('fonts/AlegreyaSansRegular.svg#AlegreyaSansRegular') format('svg');
+}
+@font-face {
+    font-family: 'AlegreyaSansMedium';
+    src: url('fonts/AlegreyaSansMedium.eot');
+    src: url('fonts/AlegreyaSansMedium.eot') format('embedded-opentype'),
+         url('fonts/AlegreyaSansMedium.woff2') format('woff2'),
+         url('fonts/AlegreyaSansMedium.woff') format('woff'),
+         url('fonts/AlegreyaSansMedium.ttf') format('truetype'),
+         url('fonts/AlegreyaSansMedium.svg#AlegreyaSansMedium') format('svg');
+}
+
+
+
+
+#first-section-test {
+	background-image: url(../image/background.jpg);
+	height: 700px;
+	background-size: 100%;
+	background-repeat: repeat-x;
+	background-position: fixed;
+}
+.menu-nav-bar {
+	padding-top: 15px;
+}
+#ryad {
+	float:left;
+}
+
+.top-nav_menu {
+	list-style: none;
+	padding: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.top-nav_menu li {
+	margin-right: 50px;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: 'AlegreyaSansSCRegular';
+}
+.top-nav_menu a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+}
+.info-bloc {
+	padding-top: 100px;
+}
+.info-bloc h1 {
+	font-size: 55px;
+}
+.tel h5 {
+	font-weight: 400;
+}
+.price {
+	padding: 0;	
+}
+.price h1 {
+	font-size: 55px;
+	font-weight: 900;
+	font-family: 'AlegreyaSansSCExtraBold';
+}
+.price h6, a {
+	text-decoration: none;
+	color: black;
+}
+.price h6 {
+	font-size: 18px;
+	font-weight: 500;
+	font-family: 'AlegreyaSansSCRegular';
+}
+.price li, h6, h1 {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+.price h5 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'AlegreyaSansRegular';
+}
+.price li {
+    list-style-type: none; 
+    margin-top: 30px;
+ }
+.price li:before {
+    content: "+ "; 
+ }
+#ryad p {
+	font-weight: 500;
+	font-family: 'AlegreyaSansRegular';
+}
+#price2 ul, li {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	font-size: 18px;
+	font-family: 'AlegreyaSansSCRegular';
+
+}
+#price2 li {
+    list-style-type: none; 
+
+ }
+#price2 li:before {
+    content: "+  ";
+ }
+#price2 img {
+	margin-top: 42px;
+}
+#price2 h6 {
+	margin-left: 250px;
+	margin-top: 52px;
+	font-family: 'AlegreyaSansMedium';
+	font-weight: 500;
+}
+#right {
+	margin-left:35px;
+}
