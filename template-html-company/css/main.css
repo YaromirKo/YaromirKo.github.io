@@ -38,12 +38,12 @@ body {
   width: 100%;
   height: 2px;
   background-color: #009adf;
-  -webkit-transform: translateY(28px) scale(0);
-          transform: translateY(28px) scale(0);
+  -webkit-transform: translateY(38px) scale(0);
+          transform: translateY(38px) scale(0);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .top-nav_menu li a:hover::after {
-  -webkit-transform: translateY(28px) scale(1);
-          transform: translateY(28px) scale(1);
+  -webkit-transform: translateY(38px) scale(1);
+          transform: translateY(38px) scale(1);
 }
