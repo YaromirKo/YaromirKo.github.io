@@ -28,9 +28,36 @@ body
 					width: 100%
 					height: 2px
 					background-color: $active-color
-					transform: translateY(28px) scale(0)
+					transform: translateY(38px) scale(0)
 					transition: all 0.2s
 				&:hover
 					text-decoration
 					&::after
-						transform: translateY(28px) scale(1)
+						transform: translateY(38px) scale(1)
+.left-sidebar
+	margin-top: 40px
+	background-color: $white
+	&_menu
+		list-style: none
+		padding: 0
+		li
+			transition: all 0.1s
+			&:first-child
+				a
+					padding-top: 20px
+			&:last-child
+				a
+					padding-bottom: 20px
+			&:hover
+				background-color: $active-color
+				a
+					color: $white
+			a
+				display: block
+				padding: 15px 29px
+				text-decoration: none
+				color: $dark
+				font-size: 16px
+				font-weight: 400
+
+				

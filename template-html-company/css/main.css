@@ -47,3 +47,36 @@ body {
   -webkit-transform: translateY(38px) scale(1);
           transform: translateY(38px) scale(1);
 }
+
+.left-sidebar {
+  margin-top: 40px;
+  background-color: #fff;
+}
+.left-sidebar_menu {
+  list-style: none;
+  padding: 0;
+}
+.left-sidebar_menu li {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.left-sidebar_menu li:first-child a {
+  padding-top: 20px;
+}
+.left-sidebar_menu li:last-child a {
+  padding-bottom: 20px;
+}
+.left-sidebar_menu li:hover {
+  background-color: #009adf;
+}
+.left-sidebar_menu li:hover a {
+  color: #fff;
+}
+.left-sidebar_menu li a {
+  display: block;
+  padding: 15px 29px;
+  text-decoration: none;
+  color: #131313;
+  font-size: 16px;
+  font-weight: 400;
+}
