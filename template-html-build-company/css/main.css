@@ -7,8 +7,10 @@ html {
 }
 
 body {
+  margin: 0;
   background-color: #eef3f5;
   color: #131313;
+  font-family: "Roboto", sans-serif;
   padding-top: 40px;
 }
 
@@ -143,4 +145,37 @@ h2 {
 }
 .directions-block h3 {
   color: #009adf;
+}
+
+.footer {
+  background-color: #131313;
+  padding: 59px 0;
+  color: #666666;
+}
+.footer img {
+  width: 14px;
+  height: 14px;
+}
+.footer-polys-link {
+  font-size: 14px;
+}
+.footer p {
+  margin-bottom: 14px;
+}
+.footer a {
+  color: #666666;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer small {
+  display: block;
+  margin-top: 56px;
+  line-height: 16px;
+  font-size: 10px;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
 }
