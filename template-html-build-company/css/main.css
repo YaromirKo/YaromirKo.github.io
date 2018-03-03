@@ -1,0 +1,146 @@
+.slick-active {
+  outline: none !important;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: #eef3f5;
+  color: #131313;
+  padding-top: 40px;
+}
+
+a {
+  color: #009adf;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.btn {
+  padding: 20px 30px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+.btn-primary {
+  background-color: #009adf;
+  border-bottom: 5px solid #0077ac;
+}
+.btn-primary:hover {
+  background-color: #00a1e9;
+}
+
+.top-nav {
+  background-color: #fff;
+  padding: 15px;
+}
+.top-nav img {
+  width: 124px;
+  height: 60px;
+}
+.top-nav_menu {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.top-nav_menu li {
+  margin-right: 45px;
+}
+.top-nav_menu li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #131313;
+  font-weight: 700;
+}
+.top-nav_menu li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #009adf;
+  -webkit-transform: translateY(38px) scale(0);
+          transform: translateY(38px) scale(0);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.top-nav_menu li a:hover::after {
+  -webkit-transform: translateY(38px) scale(1);
+          transform: translateY(38px) scale(1);
+}
+
+.left-sidebar {
+  margin-top: 40px;
+}
+.left-sidebar_menu {
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+}
+.left-sidebar_menu li {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.left-sidebar_menu li:first-child a {
+  padding-top: 20px;
+}
+.left-sidebar_menu li:last-child a {
+  padding-bottom: 20px;
+}
+.left-sidebar_menu li:hover {
+  background-color: #009adf;
+}
+.left-sidebar_menu li:hover a {
+  color: #fff;
+}
+.left-sidebar_menu li a {
+  display: block;
+  padding: 15px 29px;
+  text-decoration: none;
+  color: #131313;
+  font-size: 16px;
+  font-weight: 400;
+}
+.left-sidebar_object {
+  margin-top: 30px;
+  background-color: #fff;
+}
+.left-sidebar_object img {
+  width: 350px;
+  height: 200px;
+}
+.left-sidebar_object-description {
+  padding: 30px;
+}
+.left-sidebar_object-description h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.directions {
+  margin-top: 80px;
+}
+.directions-block {
+  background-color: #fff;
+  height: 220px;
+  text-align: center;
+  margin: 0 15px;
+  padding: 10px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.directions-block h3 {
+  color: #009adf;
+}
