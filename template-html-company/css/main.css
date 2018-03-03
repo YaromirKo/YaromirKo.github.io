@@ -1,3 +1,7 @@
+.slick-active {
+  outline: none !important;
+}
+
 html {
   font-size: 14px;
 }
@@ -6,6 +10,31 @@ body {
   background-color: #eef3f5;
   color: #131313;
   padding-top: 40px;
+}
+
+a {
+  color: #009adf;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.btn {
+  padding: 20px 30px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+.btn-primary {
+  background-color: #009adf;
+  border-bottom: 5px solid #0077ac;
+}
+.btn-primary:hover {
+  background-color: #00a1e9;
 }
 
 .top-nav {
@@ -50,9 +79,9 @@ body {
 
 .left-sidebar {
   margin-top: 40px;
-  background-color: #fff;
 }
 .left-sidebar_menu {
+  background-color: #fff;
   list-style: none;
   padding: 0;
 }
@@ -79,4 +108,39 @@ body {
   color: #131313;
   font-size: 16px;
   font-weight: 400;
+}
+.left-sidebar_object {
+  margin-top: 30px;
+  background-color: #fff;
+}
+.left-sidebar_object img {
+  width: 350px;
+  height: 200px;
+}
+.left-sidebar_object-description {
+  padding: 30px;
+}
+.left-sidebar_object-description h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.directions {
+  margin-top: 80px;
+}
+.directions-block {
+  background-color: #fff;
+  height: 220px;
+  text-align: center;
+  margin: 0 15px;
+  padding: 10px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.directions-block h3 {
+  color: #009adf;
 }
