@@ -1,5 +1,6 @@
 @import "colors"
 @import "reset"
+@import "fontello"
 
 html
 	font-size: 14px
@@ -108,9 +109,7 @@ h2
 			color: $active-color
 			
 .footer
-	img
-		width: 14px
-		height: 14px
+	margin-top: 60px
 	background-color: $dark	
 	padding: 59px 0
 	color: $footer-text
@@ -128,9 +127,36 @@ h2
 		margin-top: 56px
 		line-height: 16px
 		font-size: 10px
+		max-width: 80%
 	ul
 		padding: 0
 		list-style: none
+		li
+			line-height: 32px//высота между строк
+	&-contacts
+		text-align: right
+		&_phone
+			font-size: 20px
+			font-weight: 700
+			color: $active-color
+	&-social-links
+		@extend .footer-contacts
+		li
+			display: inline-block//строчно блочные
+			a
+				display: inline-block//строчно блочные
+				width: 42px
+				height: 42px
+				background-color: rgba($white, 0.1)
+				text-align: center
+				border-radius: 50%
+				line-height: 42px
+				margin-left: 10px
+				transition: all 0.2s
+				&:hover
+					background-color: rgba($white, 0.2)
+					color: $dark
+
 
 
 
