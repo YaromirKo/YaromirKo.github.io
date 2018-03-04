@@ -386,12 +386,28 @@ h2 {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .top-nav_menu li {
     line-height: 2;
-    margin-right: 20px;
+    margin-right: 0;
   }
   .top-nav_menu li a::after {
     display: none;
+  }
+
+  .left-sidebar_btn {
+    display: block;
+  }
+  .left-sidebar_menu {
+    display: none;
+  }
+  .left-sidebar_menu__active {
+    display: block;
+  }
+
+  .footer-contacts, .footer-social-links {
+    text-align: left;
   }
 }
