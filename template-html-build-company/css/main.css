@@ -5,8 +5,8 @@
 
 @font-face {
   font-family: 'fontello';
-  src: url("../fonts/fontello.eot?3860135");
-  src: url("../fonts/fontello.eot?3860135#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?3860135") format("woff2"), url("../fonts/fontello.woff?3860135") format("woff"), url("../fonts/fontello.ttf?3860135") format("truetype"), url("../fonts/fontello.svg?3860135#fontello") format("svg");
+  src: url("../fonts/fontello.eot?83766782");
+  src: url("../fonts/fontello.eot?83766782#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?83766782") format("woff2"), url("../fonts/fontello.woff?83766782") format("woff"), url("../fonts/fontello.ttf?83766782") format("truetype"), url("../fonts/fontello.svg?83766782#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../fonts/fontello.svg?3860135#fontello') format('svg');
+    src: url('../fonts/fontello.svg?83766782#fontello') format('svg');
   }
 }
 */
@@ -69,7 +69,7 @@
 
 /* '' */
 html {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 body {
@@ -78,6 +78,7 @@ body {
   color: #131313;
   font-family: "Roboto", sans-serif;
   padding-top: 40px;
+  font-size: 14px;
 }
 
 a {
@@ -118,8 +119,8 @@ h2 {
   display: none;
   width: 30px;
   height: 30px;
-  background-color: transparent;
   border: none;
+  background-color: transparent;
   font-size: 18px;
   position: absolute;
   right: 15px;
@@ -129,6 +130,8 @@ h2 {
   cursor: pointer;
 }
 .top-nav_menu {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   list-style: none;
   padding: 0;
   display: -webkit-box;
@@ -161,9 +164,10 @@ h2 {
 }
 
 .left-sidebar {
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 .left-sidebar_btn {
+  display: none;
   background-color: #fff;
   padding: 15px;
   position: relative;
@@ -312,8 +316,13 @@ h2 {
 }
 
 @media (max-width: 480px) {
+  html {
+    font-size: 5px;
+  }
+
   .top-nav_btn {
     display: block;
+    outline: none !important;
   }
   .top-nav_menu {
     -webkit-box-orient: vertical;
@@ -333,5 +342,15 @@ h2 {
   }
   .top-nav_menu li a::after {
     display: none;
+  }
+
+  .left-sidebar_btn {
+    display: block;
+  }
+  .left-sidebar_menu {
+    display: none;
+  }
+  .left-sidebar_menu__active {
+    display: block;
   }
 }

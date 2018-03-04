@@ -4,13 +4,14 @@
 
 
 html
-	font-size: 14px
+	font-size: 10px
 body
 	margin: 0
 	background-color: $body-bg
 	color: $dark
 	font-family: 'Roboto', sans-serif
 	padding-top: 40px
+	font-size: 14px
 a
 	color: $active-color
 h2
@@ -40,8 +41,8 @@ h2
 		display: none
 		width: 30px
 		height: 30px
-		background-color: transparent
 		border: none
+		background-color: transparent
 		font-size: 18px
 		position: absolute//выпод объекта из потока
 		right: 15px
@@ -49,6 +50,7 @@ h2
 		&:hover
 			cursor: pointer
 	&_menu
+		transition: all 0.2s
 		list-style: none
 		padding: 0
 		display: flex
@@ -72,8 +74,9 @@ h2
 					&::after
 						transform: translateY(38px) scale(1)
 .left-sidebar
-	margin-top: 40px
+	margin-top: 4rem//rem считает от тега html =40px
 	&_btn
+		display: none
 		background-color: $white
 		padding: 15px
 		position: relative

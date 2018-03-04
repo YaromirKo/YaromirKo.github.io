@@ -1,7 +1,10 @@
 @media (max-width:480px)
+	html
+		font-size: 5px
 	.top-nav
 		&_btn
 			display: block
+			outline: none !important//убирает линии
 		&_menu
 			flex-direction: column
 			display: none
@@ -13,3 +16,10 @@
 				a
 					&::after
 						display: none
+	.left-sidebar
+		&_btn
+			display: block
+		&_menu
+			display: none
+			&__active
+				display: block
