@@ -166,9 +166,6 @@ h2 {
 .left-sidebar {
   margin-top: 4rem;
 }
-.left-sidebar_object {
-  display: none;
-}
 .left-sidebar_btn {
   display: none;
   background-color: #fff;
@@ -347,6 +344,9 @@ h2 {
     display: none;
   }
 
+  .left-sidebar_object {
+    display: none;
+  }
   .left-sidebar_btn {
     display: block;
   }
