@@ -2,6 +2,7 @@
 @import "reset"
 @import "fontello"
 
+
 html
 	font-size: 14px
 body
@@ -31,9 +32,22 @@ h2
 .top-nav
 	background-color: $white
 	padding: 15px
+	position: relative
 	img
 		width: 124px
 		height: 60px
+	&_btn
+		display: none
+		width: 30px
+		height: 30px
+		background-color: transparent
+		border: none
+		font-size: 18px
+		position: absolute//выпод объекта из потока
+		right: 15px
+		top: -50px
+		&:hover
+			cursor: pointer
 	&_menu
 		list-style: none
 		padding: 0
@@ -59,6 +73,24 @@ h2
 						transform: translateY(38px) scale(1)
 .left-sidebar
 	margin-top: 40px
+	&_btn
+		background-color: $white
+		padding: 15px
+		position: relative
+		&:hover
+			cursor: pointer
+		&::after
+			content: ''
+			display: inline-block
+			position: absolute
+			top: 50%
+			margin-top: -10px
+			right: 20px
+			width: 15px
+			height: 15px
+			border-bottom: 2px solid $dark		
+			border-right: 2px solid $dark
+			transform: rotate(45deg)
 	&_menu
 		background-color: $white
 		list-style: none
@@ -156,7 +188,7 @@ h2
 				&:hover
 					background-color: rgba($white, 0.2)
 					color: $dark
-
+@import "media"
 
 
 

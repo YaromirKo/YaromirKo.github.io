@@ -33,6 +33,9 @@
 					</div>
 					<!-- /.col-md -->
 					<div class="col-md-auto">
+						<button class="top-nav_btn">
+							<i class="icon-menu"></i>
+						</button>
 						<ul class="top-nav_menu">
 							<li><a href="#">главная</a></li>
 							<li><a href="#">о компании</a></li>
@@ -50,6 +53,9 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="left-sidebar">
+						<div class="left-sidebar_btn">
+							Категории
+						</div>
 						<ul class="left-sidebar_menu">
 							<li><a href="#">Земля</a></li>
 							<li><a href="#">Жилая недвижимость</a></li>
@@ -172,20 +178,9 @@
 		<!-- /.container -->
 	</footer>
 
-
-
-
-
-
-
-
-
-
-
 		<!-- Bootstrap core JavaScript ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="slick/slick.js"></script>
 		<script>
 			$('.directions-blocks').slick({
@@ -193,6 +188,17 @@
 				dots: true,
 				slidesToShow: 4,
 				slidesToScroll: 1
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				var menubtn = $('.top-nav_btn');
+				var menu = $('.top-nav_menu');
+
+				menubtn.on('click', function(event) {
+					event.preventDefault();
+					menu.toggleClass('top-nav_menu__active');
+				});
 			});
 		</script>
 	</body>

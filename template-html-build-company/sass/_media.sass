@@ -1,0 +1,15 @@
+@media (max-width:480px)
+	.top-nav
+		&_btn
+			display: block
+		&_menu
+			flex-direction: column
+			display: none
+			&__active
+				display: flex
+				margin-bottom: 0
+			li
+				line-height: 2//чтобы элементы были пошире
+				a
+					&::after
+						display: none
