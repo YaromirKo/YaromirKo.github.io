@@ -166,6 +166,9 @@ h2 {
 .left-sidebar {
   margin-top: 4rem;
 }
+.left-sidebar_object {
+  display: none;
+}
 .left-sidebar_btn {
   display: none;
   background-color: #fff;
@@ -315,7 +318,7 @@ h2 {
   color: #131313;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   html {
     font-size: 5px;
   }
@@ -352,5 +355,43 @@ h2 {
   }
   .left-sidebar_menu__active {
     display: block;
+  }
+
+  .copy {
+    text-align: center;
+  }
+  .copy small {
+    display: block;
+    margin: 36px auto;
+  }
+
+  .footer-contacts, .footer-social-links {
+    text-align: left;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  html {
+    font-size: 5px;
+  }
+
+  .top-nav_btn {
+    display: block;
+    outline: none !important;
+  }
+  .top-nav_menu {
+    display: none;
+  }
+  .top-nav_menu__active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+  }
+  .top-nav_menu li {
+    line-height: 2;
+    margin-right: 20px;
+  }
+  .top-nav_menu li a::after {
+    display: none;
   }
 }

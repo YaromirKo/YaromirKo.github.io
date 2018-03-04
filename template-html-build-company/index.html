@@ -26,13 +26,13 @@
 		<div class="container">
 			<div class="top-nav">
 				<div class="row justify-content-between align-items-center">
-					<div class="col-md-auto">
+					<div class="col-xl-auto">
 						<div class="logo">
 							<img src="img/logo.jpg" alt="logo">
 						</div>
 					</div>
 					<!-- /.col-md -->
-					<div class="col-md-auto">
+					<div class="col-xl-auto">
 						<button class="top-nav_btn">
 							<i class="icon-menu"></i>
 						</button>
@@ -92,7 +92,7 @@
 						<p>Perspiciatis dolore, sunt optio quae animi vero! In et tempore natus ut itaque minima dicta, corrupti, deserunt, explicabo minus dolorum iste alias.</p>
 						<p>Pariatur laudantium doloremque sint, delectus rem, perspiciatis facere laborum eius consectetur earum voluptas explicabo repellat maiores itaque ut reprehenderit mollitia temporibus illum, dolores ratione recusandae voluptates!</p>
 						<p>Repellat magnam, quidem, officia mollitia modi suscipit consequuntur architecto? Et eligendi exercitationem reiciendis autem enim, quibusdam soluta quod!</p>
-						<a href="#" class="btn btn-primary">Узнать больше</a>
+						<a href="#" class="btn btn-primary">Узнать больше о компании</a>
 					</div>
 					<!-- /.content -->
 					<div class="directions">
@@ -133,7 +133,7 @@
 					</div>
 				</div>
 				<!-- /.col-md -->
-				<div class="col-md-2">
+				<div class="col-md-2 col-6">
 					<ul class="footer_menu">
 						<li><a href="#">Главная</a></li>
 						<li><a href="#">О компании</a></li>
@@ -144,7 +144,7 @@
 					</ul>
 				</div>
 				<!-- /.col-md -->
-				<div class="col-md">
+				<div class="col-md col-6">
 					<ul class="footer_menu">
 						<li><a href="#">Земля</a></li>
 						<li><a href="#">Жилая недвижимость</a></li>
@@ -187,7 +187,14 @@
 				arrows: false,	
 				dots: true,
 				slidesToShow: 4,
-				slidesToScroll: 1
+				slidesToScroll: 1,
+				responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}]
 			});
 		</script>
 		<script>
