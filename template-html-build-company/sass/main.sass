@@ -34,7 +34,7 @@ h2
 			background-color: lighten($active-color, 2%)
 .top-nav
 	background-color: $white
-	padding: 15px
+	padding: 15px 34px
 	position: relative
 	img
 		width: 124px
@@ -58,6 +58,8 @@ h2
 		display: flex
 		li
 			margin-right: 45px
+			&:last-child
+				margin-right: 0
 			a
 				text-transform: uppercase
 				text-decoration: none
@@ -203,6 +205,10 @@ h2
 	p
 		margin-bottom: 40px	
 .content
+	&_my-address
+		display: block
+		line-height: 1
+		margin-bottom: 20px
 	&_my-contact
 		font-size: 16px
 		list-style: none
@@ -211,8 +217,50 @@ h2
 			color: #009adf
 		&_my-info-contact
 			margin-right: 12px
-	&_my-address
-		display: block
+			line-height: 1.5
+	&_social-links
+		ul
+			list-style: none
+			margin-top: 36px
+			padding: 0
+			li
+				display: inline-block
+				a
+					display: inline-block
+					background-color: $active-color
+					color: $white
+					margin-right: 15px
+					width: 32px
+					height: 32px
+					text-align: center
+					line-height: 33px
+					border-radius: 50%
+.struct
+	&-card
+		background-color: $white
+		padding: 25px 30px
+		margin-bottom: 30px
+		min-height: 42rem
+		display: flex
+		flex-direction: column
+		transition: all 0.2s
+		&:hover
+			box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1)
+		a
+			text-transform: uppercase
+			text-decoration: none//чтобы ссылки не подчеркивались
+			display: block
+			margin-bottom: 20px
+		small
+			display: block
+			color: $inn
+			line-height: 1.5
+		p
+			line-height: 1.5
+
+
+
+
 @import "media"
 
 
