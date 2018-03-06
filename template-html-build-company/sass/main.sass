@@ -5,6 +5,8 @@
 
 html
 	font-size: 10px
+img
+	max-width: 100%//на всякий случай чтобы не выпадали img
 body
 	margin: 0
 	background-color: $body-bg
@@ -130,6 +132,7 @@ h2
 				font-weight: 400
 .content
 	margin-top: 40px
+	margin-bottom: 76px
 .directions
 	margin-top: 80px
 	&-block
@@ -191,6 +194,25 @@ h2
 				&:hover
 					background-color: rgba($white, 0.2)
 					color: $dark
+.team
+	text-align: center
+	h4
+		font-size: 18px
+		font-weight: 400
+		margin-bottom: 15px
+	p
+		margin-bottom: 40px	
+.content
+	&_my-contact
+		font-size: 16px
+		list-style: none
+		padding: 0
+		i
+			color: #009adf
+		&_my-info-contact
+			margin-right: 12px
+	&_my-address
+		display: block
 @import "media"
 
 

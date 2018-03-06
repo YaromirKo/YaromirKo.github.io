@@ -55,6 +55,8 @@
 					&::after
 						display: none
 	.left-sidebar
+		&_object
+			display: none
 		&_btn
 			display: block
 		&_menu
@@ -64,3 +66,9 @@
 	.footer
 		&-contacts
 			text-align: left
+@media (min-width:992px) and (max-width:1199px)
+	.top-nav_menu
+		display: flex
+		justify-content: space-between
+		li
+			margin: 0

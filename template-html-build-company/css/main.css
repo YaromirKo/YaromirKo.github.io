@@ -5,8 +5,8 @@
 
 @font-face {
   font-family: 'fontello';
-  src: url("../fonts/fontello.eot?83766782");
-  src: url("../fonts/fontello.eot?83766782#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?83766782") format("woff2"), url("../fonts/fontello.woff?83766782") format("woff"), url("../fonts/fontello.ttf?83766782") format("truetype"), url("../fonts/fontello.svg?83766782#fontello") format("svg");
+  src: url("../fonts/fontello.eot?36583750");
+  src: url("../fonts/fontello.eot?36583750#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?36583750") format("woff2"), url("../fonts/fontello.woff?36583750") format("woff"), url("../fonts/fontello.ttf?36583750") format("truetype"), url("../fonts/fontello.svg?36583750#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../fonts/fontello.svg?83766782#fontello') format('svg');
+    src: url('../fonts/fontello.svg?36583750#fontello') format('svg');
   }
 }
 */
@@ -48,6 +48,16 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+.icon-phone:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-mail:before {
+  content: '\e801';
+}
+
+/* '' */
 .icon-facebook:before {
   content: '\f09a';
 }
@@ -70,6 +80,10 @@
 /* '' */
 html {
   font-size: 10px;
+}
+
+img {
+  max-width: 100%;
 }
 
 body {
@@ -236,6 +250,7 @@ h2 {
 
 .content {
   margin-top: 40px;
+  margin-bottom: 76px;
 }
 
 .directions {
@@ -313,6 +328,33 @@ h2 {
 .footer-social-links li a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: #131313;
+}
+
+.team {
+  text-align: center;
+}
+.team h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.team p {
+  margin-bottom: 40px;
+}
+
+.content_my-contact {
+  font-size: 16px;
+  list-style: none;
+  padding: 0;
+}
+.content_my-contact i {
+  color: #009adf;
+}
+.content_my-contact_my-info-contact {
+  margin-right: 12px;
+}
+.content_my-address {
+  display: block;
 }
 
 @media (max-width: 767px) {
@@ -397,6 +439,9 @@ h2 {
     display: none;
   }
 
+  .left-sidebar_object {
+    display: none;
+  }
   .left-sidebar_btn {
     display: block;
   }
@@ -409,5 +454,18 @@ h2 {
 
   .footer-contacts, .footer-social-links {
     text-align: left;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .top-nav_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .top-nav_menu li {
+    margin: 0;
   }
 }
