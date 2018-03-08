@@ -22,6 +22,7 @@ h2
 	padding: 20px 30px
 	display: inline-block
 	color: $white
+	border: none
 	border-radius: 5px
 	text-decoration: none
 	font-size: 16px
@@ -351,10 +352,86 @@ h2
 		text-align: center
 		small
 			font-size: 10px
-
-
-
-
+.object
+	&-card
+		background-color: $white
+		margin-bottom: 30px
+		img
+			width: 100%
+		&_text
+			padding: 30px
+		&_title
+			display: block
+			font-size: 16px
+			color: $active-color
+			text-decoration: none
+		&_price
+			display: block
+			font-size: 20px
+			font-weight: 700
+			color: $active-color
+			text-align: center
+		&_btn
+			display: block
+			text-align: center
+		&_more
+			display: block
+			color: $dark
+			margin-top: 30px
+			text-align: center
+/*Страница объекта*/
+.object-page
+	&_gallery
+		float: right
+/*Всплывающее окна*/
+.modal
+	display: none
+	background-color: rgba(0, 0, 0, 0.4)
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	&-contant
+		position: relative
+		background-color: $white
+		padding: 30px 50px
+		width: 100%
+		max-width: 370px
+		margin: 50px auto
+		text-align: center
+		box-shadow: 0 12px 24px rgba(0, 0, 1, 0.18)
+		.close
+			position: absolute
+			right: 15px
+			top: 15px
+			line-height: 1
+			font-size: 20px
+			opacity: 0.5
+			&:hover
+				cursor: pointer
+		h4
+			margin-top: 0
+			margin-bottom: 14px
+			font-size: 18px
+			color: $active-color
+		p
+			font-size: 12px
+			margin-top: 0
+	&-form
+		margin-top: 37px
+		input
+			display: block
+			width: 100%
+			border: 1px solid rgba($dark, 0.15)
+			font-size: 15px
+			margin-bottom: 10px
+			border-radius: 4px
+			padding: 20px
+		&_btn
+			display: block
+			width: 100%
+			margin-bottom: 20px
 @import "media"
 
 
