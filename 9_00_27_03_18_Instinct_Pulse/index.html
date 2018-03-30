@@ -14,6 +14,7 @@
 
 		<!-- Custom styles for this template -->
 		<link rel="stylesheet" type="text/css" id='styles' href='css/main.css'>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<div class="header">
@@ -67,7 +68,8 @@
 			<div class="row content_menu_row2">
 				<div class="col-md col-xl col-lg">
 					<div class="content_menu_btn">
-						<div class="mebtn_img21"></div>      						<p>Economic Calendar</p>
+						<div class="mebtn_img21"></div>
+						<p>Economic Calendar</p>
 					</div>
 				</div>
 				<div class="col-md col-xl col-lg">
@@ -111,8 +113,7 @@
 				</div>
 			</div>
 		</div>
-
-
+	<!-- ////////////////////////////////////////////////////////////////// -->
 		<div class="modal_prof_menu">
 			<div class="modal_prof_menu_bar">
 				<p>Profile menu</p>
@@ -132,28 +133,153 @@
 					</ul>
 				</span>
 			</div>
-		</div>
-
+			<div class="modal_prof_menu_edit-your-personal-infor">
+				<form>
+					<p>Personal info</p>
+					<div class="row">
+						<div class="col">
+							 <div class="group">
+				    <input type="text"><span class="highlight"></span><span class="bar"></span>
+				    <label>Name</label>
+				  </div>
+						</div>
+						<div class="col">
+							 <div class="group">
+				    <input type="text"><span class="highlight"></span><span class="bar"></span>
+				    <label>Second name</label>
+				  </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							Date of birth  (DD/MM/YY)
+						</div>
+							<div class="col">
+								<div class="group">
+				    <input type="text"><span class="highlight"></span><span class="bar"></span>
+				    <label>Day</label>
+				  </div>
+							</div>
+							<div class="col">
+								 <div class="group">
+				    <input type="text"><span class="highlight"></span><span class="bar"></span>
+				    <label>Month</label>
+				  </div>
+							</div>
+							<div class="col">
+				      <div class="group">
+				    <input type="text"><span class="highlight"></span><span class="bar"></span>
+				 	<label>Year</label>
+				  </div>
+							</div>
+						</div>
+					<div class="row">
+						<div class="col">
+							<div class="group">
+				    <input type="email"><span class="highlight"></span><span class="bar"></span>
+				    <label>Email address</label>
+				  </div>
+						</div>
+						<div class="col">
+							<div class="group">
+				    <input type="email"><span class="highlight"></span><span class="bar"></span>
+				    <label>Phone number</label>
+				  </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							  <div class="group">
+				    <input type="email"><span class="highlight"></span><span class="bar"></span>
+				    <label>Country</label>
+				  </div>
+						</div>
+						<div class="col">
+							  <div class="group">
+				    <input type="email"><span class="highlight"></span><span class="bar"></span>
+				    <label>City</label>
+						</div>
+					</div>
+					</div>
+				  <button type="button" class="button buttonBlue">Apply
+				    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+				  </button>
+				</form>
+			</div>
+			<!-- //////////////////////////////////////////////////////////////////////////////////// -->
+			<div class="modal_prof_menu_ch-pass">
+				<form class="myform">
+					<p>Change password</p>
+					<div class="group">
+				    <input type="text"><span class="highlight"></span><span class="bar"></span>
+				    <label>Current password</label>
+				  </div>
+				 <div class="group">
+				    <input type="text"><span class="highlight"></span><span class="bar"></span>
+				    <label>New password</label>
+				  </div>
+				  <div class="group">
+				    <input type="email"><span class="highlight"></span><span class="bar"></span>
+				    <label>Type new password again</label>
+						</div>
+				  <button type="button" class="button buttonBlue">Save
+				    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+				  </button>
+				</form>
+			</div>
+	<!-- ////////////////////////////////////////////////////////////////// -->
+		<!-- <div class="modalNotifications">
+			<div class="modalNotifications_colum">
+				<div class="row justify-content-between">
+					<div class="col-md col-xl col-lg">
+						<div class="headerDataAndNotifications">
+							<span class="headerDataAndNotifications_span">15.01.2018  22:35:44</span> <span> |  <span class="headerDataAndNotifications_btn">Notifications<img src="img/ring.png"></span></span>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-between">
+					<div class="col-md col-xl col-lh  align-self-end">
+						<div class="info">
+							<span>lorem6000</span>
+						</div>
+						<span class="Rectangle">enwoi</span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div> -->
 		
 		
 		
-
-
-		<!-- Bootstrap core JavaScript ================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="js/jquery-3.2.1.slim.min.js"></script>
 	
+	
+		<!-- Bootstrap core JavaScript ==================================================
+		Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery-3.2.1.slim.min.js"></script>
 		<script>
-
+	
 			$(document).ready(function() {
 				var editYourProfile = $('.modal_prof_menu_icon1_Alert1');
 				var gorListMenu = $('.modal_prof_menu_icon1_Alert1_shadow1');
-
+	
 				var colorTheme = $('.modal_prof_menu_icon2_Alert2');
 				var gorListMenu1 = $('.modal_prof_menu_icon2_Alert2_shadow2');
-
+	
 				var user_profile_menu = $('.user-profile-menu');
 				var showProfileMenu = $('.modal_prof_menu');
+
+				var Edit_your_personal_info= $('.modal_prof_menu_icon1_Alert1_shadow1_Edit-your-personal-info');
+				var show_Edit_your_personal_info = $('.modal_prof_menu_edit-your-personal-infor');
+				
+				var ch_pass = $('.modal_prof_menu_icon1_Alert1_shadow1_Change-password');
+				var showCh_pass = $('.modal_prof_menu_ch-pass');
+
+				ch_pass.on('click', function(event) {
+					event.preventDefault();
+					show_Edit_your_personal_info.removeClass('modal_prof_menu_edit-your-personal-infor__active');
+					showCh_pass.toggleClass('modal_prof_menu_ch-pass__active');
+				});
 
 				editYourProfile.on('click', function(event) {
 					event.preventDefault();
@@ -163,11 +289,18 @@
 					event.preventDefault();
 					gorListMenu1.toggleClass('modal_prof_menu_icon2_Alert2_shadow2__active');
 				});
+				Edit_your_personal_info.on('click', function(event) {
+					event.preventDefault();
+					showCh_pass.removeClass('modal_prof_menu_ch-pass__active');
+					show_Edit_your_personal_info.toggleClass('modal_prof_menu_edit-your-personal-infor__active');
+				});
 				user_profile_menu.on('click', function(event) {
 					event.preventDefault();
 					showProfileMenu.toggleClass('modal_prof_menu__active');
 					 gorListMenu.removeClass('modal_prof_menu_icon1_Alert1_shadow1__active');
-							gorListMenu1.removeClass('modal_prof_menu_icon2_Alert2_shadow2__active');	
+							gorListMenu1.removeClass('modal_prof_menu_icon2_Alert2_shadow2__active');
+							show_Edit_your_personal_info.removeClass('modal_prof_menu_edit-your-personal-infor__active');
+							showCh_pass.removeClass('modal_prof_menu_ch-pass__active');	
 					
 				});
 				$(document).keydown(function(e){
@@ -175,9 +308,11 @@
 				            showProfileMenu.toggleClass('modal_prof_menu__active');
 				            gorListMenu.removeClass('modal_prof_menu_icon1_Alert1_shadow1__active');
 							gorListMenu1.removeClass('modal_prof_menu_icon2_Alert2_shadow2__active');
+							show_Edit_your_personal_info.removeClass('modal_prof_menu_edit-your-personal-infor__active');
+							showCh_pass.removeClass('modal_prof_menu_ch-pass__active');	
 				        }
 				    });
-
+	
 				$('.modal_prof_menu_icon2_Alert2_shadow2_Dark-UI').click(function () {
 				  if ($("link[id='styles']").attr('href') == 'css/main.css'){
 				    $("link[id='styles']").attr('href', 'css/main_dark.css');
@@ -188,7 +323,7 @@
 				    $("link[id='styles']").attr('href', 'css/main.css');
 				  }
 				});
-
+	
 				
 				});
 		</script>
