@@ -18,6 +18,11 @@ form.myform {
 	border: none;
 	border-bottom: #ffffff;
 }
+form.myform2 {
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+}
 .group { 
 	position: relative; 
 	margin-bottom: 45px; 
